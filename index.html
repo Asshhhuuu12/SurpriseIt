@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendSurprise | Create a Surprise for Your Friend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-gift"></i> Friend<span class="accent">Surprise</span></h1>
+            <p class="tagline">Create a lit surprise for your homie! 💥</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="emoji-header">🤫🤔🎁</div>
+                <h2>Create Your Friend's Surprise</h2>
+                <p class="subtitle">Enter your friend's name and we'll generate a dope surprise link for them!</p>
+                
+                <div class="input-group">
+                    <div class="input-with-icon">
+                        <i class="fas fa-user-friends"></i>
+                        <input type="text" id="friendName" placeholder="Enter your friend's name..." maxlength="50">
+                    </div>
+                    <button id="generateBtn" class="btn-primary">
+                        <i class="fas fa-bolt"></i> Generate Surprise Link
+                    </button>
+                </div>
+                
+                <div id="resultSection" class="hidden">
+                    <div class="link-container">
+                        <div class="link-display">
+                            <i class="fas fa-link"></i>
+                            <span id="generatedLink">Loading...</span>
+                        </div>
+                        <div class="button-group">
+                            <button id="copyBtn" class="btn-secondary">
+                                <i class="fas fa-copy"></i> Copy Link
+                            </button>
+                            <a id="previewLink" target="_blank" class="btn-secondary">
+                                <i class="fas fa-eye"></i> Preview
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="instructions">
+                        <p><i class="fas fa-info-circle"></i> Share this link with your friend. When they open it, they'll get a 5-second countdown before the surprise!</p>
+                    </div>
+                </div>
+                
+                <div class="features">
+                    <h3><i class="fas fa-sparkles"></i> How it works</h3>
+                    <div class="feature-grid">
+                        <div class="feature">
+                            <div class="feature-icon">1️⃣</div>
+                            <h4>Enter Name</h4>
+                            <p>Type your friend's name</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">2️⃣</div>
+                            <h4>Get Link</h4>
+                            <p>Generate a unique surprise link</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">3️⃣</div>
+                            <h4>Share & Surprise</h4>
+                            <p>Send the link and watch the magic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-proof">
+                <p><i class="fas fa-quote-left"></i> Bro, this website is fire! My friend was so shook! <i class="fas fa-quote-right"></i></p>
+                <p class="author">- Asshhhuuu12</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with <i class="fas fa-heart pulse"></i> for the GenZ gang | No cap, just vibes 🚀</p><br>
+            <p class="footer-links"> 
+                <a href="https://GitHub.com/asshhhuuu12"><i class="fab fa-github"></i> Asshhhuuu12</a>
+              
+            </p>
+        </footer>
+    </div>
+
+    <div id="notification" class="notification hidden">
+        <span id="notificationText">Link copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
